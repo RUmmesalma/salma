@@ -1,0 +1,46 @@
+public class testclass {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+        System.out.println("Test - system");
+        int monthlysalary=25000,annualsalary;
+        double abs,hra,da,ta,incometax;
+        abs=monthlysalary*12;
+        hra=abs*0.20;
+        da=(abs*0.40)+hra;	
+	    double ta()
+	    {
+	    	if(abs>500000)
+	    	{
+	    		ta=abs*0.10;
+	    	}
+	    	else
+	    	{
+	    		ta=0;
+	    	}
+	    }
+	    annualsalary=monthlysalary*12*hra*da*ta;
+	    if(annualsalary<500000)
+	    {
+	    	system.out.println("No-Tax");
+	    }
+	    elseif(annualsalary>500000 && annualsalary<1000000)
+	    {
+	    	incometax=annualsalary*0.10;
+	    	System.out.println("Income Tax= "+incometax);
+	    }
+	    elseif(annualsalary>1000000 && annualsalary<2000000)
+	    {
+	    	incometax=annualsalary*0.20;
+	    	System.out.println("Income Tax="+incometax);
+	    }	
+	    elseif(annualsalary>2000000)
+	    {
+	    	incometax=annualsalary*0.40;
+	    	System.out.println("Income Tax="+incometax);
+	    }	
+	    
+	}
+	//end of main block
+
+}//end of class block
